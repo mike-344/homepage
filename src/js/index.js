@@ -17,3 +17,6 @@ githubIcon.forEach((icon) =>{
 linkedinIcon.forEach((icon) =>{
     icon.src = linkedinLogo
 })
+
+console.log("GitHub Logo Path:", githubLogo);
+console.log("LinkedIn Logo Path:", linkedinLogo);
