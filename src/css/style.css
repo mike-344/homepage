@@ -20,8 +20,10 @@ header{
     
 }
 
-img{
+.headshot{
     width: 80vw;
+    max-width: 500px;
+    
 }
 .about-me{
   display: flex;
@@ -54,6 +56,7 @@ main{
 main{
     display: flex;
     flex-direction: column;
+    padding-bottom: 20%;
 }
 main h2{
     align-self: center;
@@ -62,7 +65,8 @@ main h2{
     width: 100vw;
 }
 .contact-info{
-    padding:12px;
+    padding:16px;
+    gap: 8px;
     padding-bottom: 13%;
     background-color:#407088;
     display: flex;
