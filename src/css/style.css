@@ -39,7 +39,7 @@ header{
     
 }
 .github-icon, .linkedin-icon{
-    width: 30px;
+    min-width: 30px;
 }
 .project{
     height: 400px;
@@ -47,7 +47,8 @@ header{
 }
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 320px));
     gap: 30px;
 }
 main{
