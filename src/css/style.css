@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .slant{
     height: 600px;
@@ -12,26 +18,16 @@
     z-index: -1;
     transform: skew(0, -30deg) translateY(-55%);
 }
-header{
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    align-items:  center;
-    
-}
 
 .headshot{
-    width: 80vw;
-    max-width: 450px;
-    
+    width: 90vw;
 }
-.about-me{
-  display: flex;
-  flex-direction: column;
+
+
+.about-summary h2{
+    text-align: center;
 }
-.about-me h2{
-    align-self: center;
-}
+
 .icon-wrapper{
     display: flex;
     justify-content: center;
@@ -81,13 +77,9 @@ main h2{
     align-self: center;
 }
 h1{
-    position: relative;
     color: rgba(255, 255, 255, 0.715);
-    grid-area: 2 / 1 / 2 / 1;
-    transform: translate(0, -100%);
-    justify-self: center;
-    
-    
+    font-size: 2.0em;
+    transform: translateY(-100%);
     
 }
 .title-img-wrap{
@@ -102,10 +94,16 @@ footer{
     
 }
 
-@media (min-width: 600px){
+@media (min-width: 520px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
     header{
-        flex-direction: row;
-        
+       display: block;
+       min-height: 400px;
+       width: 100vw;
+       align-self: center;
     }
     footer{
         flex-direction: row;
@@ -124,6 +122,62 @@ footer{
         justify-content: start;
     }
     .about-me{
-        border: 1px solid black;
+        display: block;
+       
+        
+    }
+
+    h1{
+        transform: translateY(0);
+        transform: translate(-7%, 0);
+        position: relative;
+        z-index: 1;
+        
+    }
+    .headshot{
+        float: left;
+        position: relative;
+        max-height: 300px;
+        width: auto;
+        z-index: 1;
+    }
+    .about-summary{
+        background-color: white;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        width: 90vw;
+        font-size: 20px;
+        transform: translate(20px, 0);
+    }
+    .about-summary .icon-wrapper{
+       display: none;
+    }
+    .about-summary h2{
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    main h2{
+        align-self: start;
+    }
+   
+}
+@media (min-width: 800px){
+    .headshot{
+        float: none;
+    }
+    h1{
+        transform: translate(0, 0);
+      
+    }
+    .about-summary{
+        transform: translate(0, 0);
+        
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        
     }
 }
