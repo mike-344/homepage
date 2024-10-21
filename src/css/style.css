@@ -13,7 +13,7 @@ header{
 .slant{
     height: 600px;
     width: 100%;
-    background-color: #5dacbd;
+    background-color: #3bb4c1;
     position: absolute;
     z-index: -1;
     transform: skew(0, -30deg) translateY(-55%);
@@ -77,8 +77,9 @@ main h2{
     align-self: center;
 }
 h1{
+    padding: 6px;
     color: rgba(255, 255, 255, 0.715);
-    font-size: 2.0em;
+    font-size: 2.6em;
     transform: translateY(-100%);
     
 }
@@ -90,11 +91,11 @@ h1{
 footer{
     display: flex;
     flex-direction: column;
-    background-color:#5dacbd;
+    background-color:#3bb4c1;
     
 }
 
-@media (min-width: 520px){
+@media (min-width: 590px){
     .slant{
         transform: skew(0, -17deg) translateY(-55%);
     }
@@ -136,6 +137,7 @@ footer{
     }
 
     h1{
+        
         transform: translateY(0);
         transform: translate(-7%, 0);
         position: relative;
