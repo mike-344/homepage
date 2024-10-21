@@ -9,6 +9,10 @@ header{
     flex-direction: column;
     align-items: center;
 }
+.project-photo{
+    max-width: 100%;
+    height: 70%;
+}
 
 .slant{
     height: 600px;
@@ -36,6 +40,9 @@ header{
 }
 .github-icon, .linkedin-icon{
     min-width: 30px;
+}
+.project .github-icon, .project .open-new{
+    max-width: 28px;
 }
 .project{
     height: 400px;
@@ -175,7 +182,7 @@ footer{
 }
 @media (min-width: 850px){
     .slant{
-        transform: skew(0, -10deg) translateY(-55%);
+        transform: skew(0, -10deg) translateY(-35%);
     }
     .headshot{
         float: none;
