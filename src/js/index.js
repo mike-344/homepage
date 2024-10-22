@@ -10,6 +10,8 @@ import adminPhoto from "../img/admin-dashboard.png"
 import calculatorPhoto from "../img/calculator.png"
 import landingPagePhoto from "../img/landing-page.png"
 import openNewLogo from "../img/open-in-new.svg"
+import phoneLogo from "../img/phone.svg"
+import emailLogo from "../img/email-outline.svg"
 
 let headshot = document.querySelector(".headshot")
 let githubIcon = document.querySelectorAll(".github-icon")
@@ -22,6 +24,8 @@ let adminImage = document.querySelector(".admin")
 let calculatorImage = document.querySelector(".calculator")
 let landingImage = document.querySelector(".landing")
 let openNewIcon = document.querySelectorAll(".open-new")
+let phoneIcon = document.querySelector(".phone")
+let emailIcon = document.querySelector(".email")
 headshot.src = selfie
 nyImage.src = nycPhoto
 weatherImage.src = weatherPhoto
@@ -30,6 +34,8 @@ todoImage.src = todoPhoto
 adminImage.src = adminPhoto
 calculatorImage.src = calculatorPhoto
 landingImage.src = landingPagePhoto
+phoneIcon.src = phoneLogo
+emailIcon.src = emailLogo
 
 githubIcon.forEach((icon) =>{
     icon.src = githubLogo
