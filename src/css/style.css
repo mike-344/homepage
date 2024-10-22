@@ -47,9 +47,16 @@ header{
     box-shadow: 0px 10px 5px gray;
 }
 
+.about-summary{
+    line-height: 24px;
+    
+}
 
 .about-summary h2{
     text-align: center;
+}
+.about-summary p{
+    padding-bottom: 12px;
 }
 
 .icon-wrapper{
@@ -107,6 +114,7 @@ main h2{
 }
 .phone, .email{
     max-width: 18px;
+    display: none;
     
 }
 .phone-email{
@@ -138,6 +146,14 @@ footer{
 @media (min-width: 590px){
     .slant{
         transform: skew(0, -17deg) translateY(-55%);
+    }
+    .about-summary{
+        line-height: normal;
+        
+    }
+    .phone, .email{
+        display: flex;
+        
     }
     body{
         display: flex;
